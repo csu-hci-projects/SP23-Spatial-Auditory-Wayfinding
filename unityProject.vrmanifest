@@ -1,0 +1,16 @@
+{
+  "source": "Unity",
+  "applications": [
+    {
+      "app_key": "application.generated.unity.sp23spatialauditorywayfinding.exe",
+      "launch_type": "url",
+      "url": "steam://launch/",
+      "action_manifest_path": "C:\\Users\\Adity\\Desktop\\cs464\\SP23-Spatial-Auditory-Wayfinding\\Assets\\StreamingAssets\\SteamVR\\actions.json",
+      "strings": {
+        "en_us": {
+          "name": "SP23-Spatial-Auditory-Wayfinding [Testing]"
+        }
+      }
+    }
+  ]
+}
