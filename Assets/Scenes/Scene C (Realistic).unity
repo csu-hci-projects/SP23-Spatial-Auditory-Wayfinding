@@ -300,6 +300,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5475726, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1000013281422588, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -2335,7 +2339,7 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 3.5129242
+  MinDistance: 2.5654774
   MaxDistance: 13
   Pan2D: 0
   rolloffMode: 0
@@ -2430,12 +2434,12 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1479320601}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 7c96990a8e2f1cc4ea46b9383d26bb7f, type: 2}
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.4560032, y: 2.426642, z: 2.9957886}
-  m_Center: {x: -1.2280016, y: 0.713321, z: 0.5388689}
+  m_Size: {x: 1.4939499, y: 2.426642, z: 2.9957886}
+  m_Center: {x: -0.24697495, y: 0.713321, z: 0.5388689}
 --- !u!1 &1544910725
 GameObject:
   m_ObjectHideFlags: 0

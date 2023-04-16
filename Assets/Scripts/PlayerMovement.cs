@@ -22,7 +22,7 @@ public class PlayerMovement : MonoBehaviour
         if(headRigidbody.SweepTest(Player.instance.hmdTransform.TransformDirection(Vector3.forward), out hit, collisionDistance)) {}
         else
         {
-            Debug.Log(moveValue.axis.y);
+            //Debug.Log(moveValue.axis.y);
             if (moveValue.axis.y > 0)
             {
                 Vector3 direction = Player.instance.hmdTransform.TransformDirection(new Vector3(0, 0, moveValue.axis.y));

@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class MuteUnmute : MonoBehaviour
 {
-    bool muteState = false;
-    float originalVolume;
     AudioSource audioSource;
 
     // Start is called before the first frame update
@@ -15,11 +13,14 @@ public class MuteUnmute : MonoBehaviour
     }
 
     private void OnTriggerEnter (Collider collider) {  
-        if(!muteState){ //if not muted, mute it
+        Debug.Log("entered");
+
+        //if(!muteState){ //if not muted, mute it
+            
             audioSource.mute = true;
-        }
-        else{ //if already muted, UN-mute it
+       // }
+        //else{ //if already muted, UN-mute it
             //audioSource.mute = false; 
-        }
+        //}
     }
 }
