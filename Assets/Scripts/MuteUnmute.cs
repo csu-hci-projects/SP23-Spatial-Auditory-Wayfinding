@@ -14,13 +14,12 @@ public class MuteUnmute : MonoBehaviour
         audioSource = GetComponent<AudioSource>();
     }
 
-    // this function is called on the frame when something collides with this game object
-    private void OnCollisionEnter (Collision collision) {  
+    private void OnTriggerEnter (Collider collider) {  
         if(!muteState){ //if not muted, mute it
             audioSource.mute = true;
         }
         else{ //if already muted, UN-mute it
-            audioSource.mute = false; 
+            //audioSource.mute = false; 
         }
     }
 }
