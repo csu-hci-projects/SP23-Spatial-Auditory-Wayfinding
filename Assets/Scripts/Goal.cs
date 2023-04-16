@@ -21,7 +21,7 @@ public class Goal : MonoBehaviour
         if (!timerStop)
         {
             timer += Time.deltaTime;
-            Debug.Log(timer.ToString("0.00") + "s");
+            //Debug.Log(timer.ToString("0.00") + "s");
         }
         
     }
