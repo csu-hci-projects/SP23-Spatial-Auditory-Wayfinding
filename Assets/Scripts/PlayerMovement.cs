@@ -19,9 +19,9 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         RaycastHit hit;
-        if(headRigidbody.SweepTest(Player.instance.hmdTransform.TransformDirection(Vector3.forward), out hit, collisionDistance)) {}
-        else
-        {
+        //if(headRigidbody.SweepTest(Player.instance.hmdTransform.TransformDirection(Vector3.forward), out hit, collisionDistance)) {}
+        //else
+        //{
             //Debug.Log(moveValue.axis.y);
             if (moveValue.axis.y > 0)
             {
@@ -37,7 +37,12 @@ public class PlayerMovement : MonoBehaviour
                 speed = Mathf.Clamp(speed, -maxSpeed, 0);
                 transform.position -= speed * Time.deltaTime * Vector3.ProjectOnPlane(direction, Vector3.up);
             }
-        }        
+        //}
+        /*if (headRigidbody.SweepTest(Player.instance.hmdTransform.TransformDirection(Vector3.forward), out hit, collisionDistance)) { }
+        else
+        {
+
+        }*/
     }
 
     public void pressDown()

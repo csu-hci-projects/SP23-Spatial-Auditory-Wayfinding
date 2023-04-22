@@ -310,7 +310,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 114000010547881750, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
@@ -851,7 +851,7 @@ RectTransform:
   - {fileID: 1823871302}
   - {fileID: 1771401885}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 115.163, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -990,7 +990,7 @@ Transform:
   - {fileID: 2030183617}
   - {fileID: 1824124406}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &704760190
 GameObject:
@@ -2004,12 +2004,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1339726302}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 52.54, y: 0.050000012, z: -26.2}
+  m_LocalPosition: {x: 22.54, y: 0.55, z: -26.2}
   m_LocalScale: {x: 1.5032443, y: 1.5032443, z: 1.5032443}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 2041052563}
-  m_RootOrder: 3
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1339726304
 MonoBehaviour:
@@ -2024,8 +2024,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timer: 0
-  GoalCanvas: {fileID: 0}
-  GoalCanvasTimer: {fileID: 0}
+  GoalCanvas: {fileID: 414774810}
+  GoalCanvasTimer: {fileID: 1771401884}
 --- !u!65 &1339726305
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3697,7 +3697,6 @@ Transform:
   - {fileID: 1354100013}
   - {fileID: 704760191}
   - {fileID: 271088253}
-  - {fileID: 1339726303}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
