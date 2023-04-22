@@ -13,6 +13,15 @@ public class Goal : MonoBehaviour
     public GameObject GoalCanvas;
     public GameObject GoalCanvasTimer;
     private List<string> triggers = new List<string>();
+    [Header("Participant Data")]
+    public int Participant;
+    public enum Group
+    {
+        AControl,
+        BSynthetic,
+        CRealistic
+    };
+    public Group group;
     // Start is called before the first frame update
     void Start()
     {
@@ -27,8 +36,7 @@ public class Goal : MonoBehaviour
         {
             timer += Time.deltaTime;
             //Debug.Log(timer.ToString("0.00") + "s");
-        }
-        
+        }        
     }
     private void OnTriggerEnter(Collider other)
     {
@@ -46,11 +54,11 @@ public class Goal : MonoBehaviour
     {
         triggers.Add("test trigger 1");
         triggers.Add("test trigger 2");
-        string path = "Assets/Resources/test.txt";
+        string path = "Assets/Resources/P" + Participant.ToString("D2") + "Gr" + group.ToString().Substring(0, 1) + ".txt";
         //Write some text to the test.txt file
         StreamWriter writer = new StreamWriter(path, true);
-        writer.WriteLine("Participant: 01");
-        writer.WriteLine("Group: A");
+        writer.WriteLine("Participant: "+Participant.ToString("D2"));
+        writer.WriteLine("Group: "+group.ToString().Substring(0, 1));
         writer.WriteLine("Time: " + timer.ToString("0.00") + "s");
         writer.WriteLine();
         int i = 0;
