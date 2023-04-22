@@ -18,7 +18,7 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        RaycastHit hit;
+        //RaycastHit hit;
         //if(headRigidbody.SweepTest(Player.instance.hmdTransform.TransformDirection(Vector3.forward), out hit, collisionDistance)) {}
         //else
         //{
