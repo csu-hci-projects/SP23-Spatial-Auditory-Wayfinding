@@ -1855,6 +1855,8 @@ MonoBehaviour:
   timer: 0
   GoalCanvas: {fileID: 1768409577}
   GoalCanvasTimer: {fileID: 231534600}
+  Participant: 0
+  group: 1
 --- !u!1 &996334034
 GameObject:
   m_ObjectHideFlags: 0

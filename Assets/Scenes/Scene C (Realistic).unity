@@ -2313,6 +2313,8 @@ MonoBehaviour:
   timer: 0
   GoalCanvas: {fileID: 414774810}
   GoalCanvasTimer: {fileID: 1771401884}
+  Participant: 0
+  group: 2
 --- !u!65 &1339726305
 BoxCollider:
   m_ObjectHideFlags: 0
