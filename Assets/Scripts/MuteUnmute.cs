@@ -14,7 +14,7 @@ public class MuteUnmute : MonoBehaviour
 
     private void OnTriggerEnter (Collider other)
     {
-        Debug.Log("entered");
+        //Debug.Log("entered");
         if (other.name == "HeadCollider")
         {
 
