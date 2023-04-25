@@ -1,6 +1,0 @@
-Participant: 69
-Group: C
-Time: 39.75s
-
-1) cue1 (5)
-2) Goal

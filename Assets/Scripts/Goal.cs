@@ -73,9 +73,9 @@ public class Goal : MonoBehaviour
         }
         writer.Close();
         //Re-import the file to update the reference in the editor
-        AssetDatabase.ImportAsset(path);
+        /*AssetDatabase.ImportAsset(path);
         TextAsset asset = (TextAsset)Resources.Load("test");
         //Print the text from the file
-        Debug.Log(asset.text);
+        Debug.Log(asset.text);*/
     }
 }
