@@ -1,6 +1,0 @@
-Participant: 00
-Group: A
-Time: 0.00s
-
-1) test trigger 1
-2) test trigger 2

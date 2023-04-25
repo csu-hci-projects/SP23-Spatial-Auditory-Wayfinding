@@ -12,15 +12,20 @@ public class MuteUnmute : MonoBehaviour
         audioSource = GetComponent<AudioSource>();
     }
 
-    private void OnTriggerEnter (Collider collider) {  
+    private void OnTriggerEnter (Collider other)
+    {
         Debug.Log("entered");
+        if (other.name == "HeadCollider")
+        {
 
-        //if(!muteState){ //if not muted, mute it
-            
+            //if(!muteState){ //if not muted, mute it
+
             audioSource.mute = true;
-       // }
-        //else{ //if already muted, UN-mute it
+            // }
+            //else{ //if already muted, UN-mute it
             //audioSource.mute = false; 
-        //}
+            //}
+        }
+
     }
 }

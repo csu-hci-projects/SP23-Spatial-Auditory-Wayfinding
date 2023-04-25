@@ -26,7 +26,7 @@ public class Goal : MonoBehaviour
     void Start()
     {
         GoalCanvas.SetActive(false);
-        WriteString();
+        //WriteString();
     }
 
     // Update is called once per frame
@@ -40,10 +40,15 @@ public class Goal : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        timerStop = true;
-        GoalCanvas.SetActive(true);
-        GoalCanvasTimer.GetComponent<TextMeshProUGUI>().text = "Time: " + timer.ToString("0.00") + "s";
-        addToTriggersList(this.name);
+        if (other.name == "HeadCollider")
+        {
+            timerStop = true;
+            GoalCanvas.SetActive(true);
+            GoalCanvasTimer.GetComponent<TextMeshProUGUI>().text = "Time: " + timer.ToString("0.00") + "s";
+            addToTriggersList(this.name);
+            WriteString();
+        }
+            
     }
     public void addToTriggersList(string t)
     {
@@ -52,8 +57,8 @@ public class Goal : MonoBehaviour
     }
     private void WriteString()
     {
-        triggers.Add("test trigger 1");
-        triggers.Add("test trigger 2");
+        //triggers.Add("test trigger 1");
+        //triggers.Add("test trigger 2");
         string path = "Assets/Resources/P" + Participant.ToString("D2") + "Gr" + group.ToString().Substring(0, 1) + ".txt";
         //Write some text to the test.txt file
         StreamWriter writer = new StreamWriter(path, true);
