@@ -3587,7 +3587,7 @@ MonoBehaviour:
     actionPath: /actions/default/in/MovePlayer
     needsReinit: 0
   maxSpeed: 30
-  sensitivity: 5
+  sensitivity: 10
   collisionDistance: 0.4
   headRigidbody: {fileID: 286501509}
 --- !u!1 &1665801399
