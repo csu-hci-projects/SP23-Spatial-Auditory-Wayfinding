@@ -46,6 +46,7 @@ public class Goal : MonoBehaviour
             GoalCanvas.SetActive(true);
             GoalCanvasTimer.GetComponent<TextMeshProUGUI>().text = "Time: " + timer.ToString("0.00") + "s";
             addToTriggersList(this.name);
+            this.GetComponent<Renderer>().enabled = false;
             WriteString();
         }
             
